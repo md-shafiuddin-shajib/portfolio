@@ -36,15 +36,14 @@ const About: React.FC = () => {
           >
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                I am a soon-to-be graduate with a Bachelor's degree in Computer Science and Engineering, 
-                equipped with a solid foundation in software engineering principles. I have hands-on 
-                experience with the MERN stack and enjoy building user-friendly web applications that 
-                solve real-world problems.
+               Computer Science graduate with a strong foundation in software engineering,
+                skilled in React.js and WordPress/Elementor Pro. Passionate about building 
+                user-friendly web applications that solve real-world problems.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 I am also passionate about research-based and analytical work, where I can explore 
                 innovative solutions to complex problems. I am eager to apply my skills and continue 
-                learning through internship or entry-level opportunities in the tech industry.
+                learning through entry-level opportunities in the tech industry.
               </p>
             </div>
           </motion.div>
