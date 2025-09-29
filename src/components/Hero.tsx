@@ -145,6 +145,7 @@ const Hero: React.FC = () => {
         </motion.div>
       </div>
     </section>
+  )
   );
 };
 
