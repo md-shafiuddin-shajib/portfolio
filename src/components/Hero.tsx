@@ -121,7 +121,7 @@ const Hero: React.FC = () => {
               <div className="absolute -inset-8 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full blur-2xl animate-pulse"></div>
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-xl"></div>
               <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQEyOnVO9ibmow/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1712431854365?e=1741824000&v=beta&t=kpDiWYAoh1RXUQvZG_MF6OaGwjz_YBnZcgGwflrBtQ4"
+                src="https://media.licdn.com/dms/image/v2/D5603AQFzzwmsR47frg/profile-displayphoto-crop_800_800/B56ZlSb1U1G4AM-/0/1758024654550?e=1761782400&v=beta&t=Xv1oivQU5O25Mac_yPEJZbAOfiGUv9j2ygRTge2kM3I"
                 alt="Md Shafiuddin Shajib"
                 className="relative rounded-full w-80 h-80 object-cover border-4 border-white/20 shadow-2xl"
               />
