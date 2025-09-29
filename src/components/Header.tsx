@@ -6,6 +6,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = ['Home', 'About', 'Skills', 'Education', 'Projects', 'Contact'];
+  const menuItems = ['Home', 'About', 'Skills', 'Education', 'Experience', 'Projects', 'Contact'];
 
   return (
     <header className="fixed w-full bg-gradient-to-r from-primary-900/90 to-primary-800/90 backdrop-blur-sm z-50">

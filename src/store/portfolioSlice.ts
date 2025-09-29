@@ -12,11 +12,15 @@ const initialState: PortfolioState = {
   skills: [
     {
       category: 'Programming and Development',
-      items: ['JavaScript', 'React.js', 'Redux', 'Tailwind CSS', 'MySQL', 'MongoDB', 'C', 'C++', 'Java'],
+      items: ['JavaScript', 'React.js', 'Redux', 'Tailwind CSS', 'MySQL', 'MongoDB', 'C', 'C++', 'Java', 'Node.js', 'Express.js'],
     },
     {
       category: 'Software Engineering',
       items: ['Software Engineering Practices', 'Systems Design', 'Operating Systems', 'Algorithms', 'Data Structures'],
+    },
+    {
+      category: 'CMS & Tools',
+      items: ['WordPress', 'Elementor Pro'],
     },
     {
       category: 'Soft Skills',
