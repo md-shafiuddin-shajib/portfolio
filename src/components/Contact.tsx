@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
