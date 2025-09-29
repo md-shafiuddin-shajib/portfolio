@@ -46,8 +46,7 @@ const Hero: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              MERN Stack Developer crafting exceptional web experiences with modern technologies. 
-              Passionate about building scalable applications and turning ideas into reality.
+             Frontend React.js Developer | Crafting sleek, scalable web apps & WordPress/Elementor sites.
             </motion.h2>
             
             <motion.div 
