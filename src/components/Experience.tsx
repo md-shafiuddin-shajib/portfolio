@@ -18,24 +18,24 @@ const Experience: React.FC = () => {
   };
 
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
-      <div className="container mx-auto px-6">
+    <section id="experience" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
           <div className="flex items-center justify-center mb-6">
-            <div className="bg-blue-100 p-4 rounded-full">
-              <Briefcase className="h-8 w-8 text-blue-600" />
+            <div className="bg-blue-100 p-3 sm:p-4 rounded-full">
+              <Briefcase className="h-6 w-6 sm:h-8 sm:w-8 text-blue-600" />
             </div>
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Experience
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
             Professional journey and key accomplishments
           </p>
         </motion.div>
@@ -48,52 +48,52 @@ const Experience: React.FC = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-500"></div>
+            {/* Timeline line - hidden on mobile */}
+            <div className="absolute left-6 sm:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-500 hidden sm:block"></div>
             
             {/* Experience card */}
-            <div className="relative flex items-start space-x-8">
+            <div className="relative flex flex-col sm:flex-row sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 lg:space-x-8">
               {/* Timeline dot */}
-              <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
-                <Briefcase className="h-8 w-8 text-white" />
+              <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg self-start">
+                <Briefcase className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
               
               {/* Content */}
-              <div className="flex-1 bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border border-gray-100">
-                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+              <div className="flex-1 bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl p-6 sm:p-8 hover:shadow-xl sm:hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4 sm:mb-6">
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                       {experience.position}
-                      <span className="ml-3 px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full">
+                      <span className="ml-2 sm:ml-3 px-2 sm:px-3 py-1 bg-blue-100 text-blue-700 text-xs sm:text-sm font-medium rounded-full">
                         {experience.type}
                       </span>
                     </h3>
-                    <p className="text-xl text-blue-600 font-semibold mb-3">
+                    <p className="text-lg sm:text-xl text-blue-600 font-semibold mb-3">
                       {experience.company}
                     </p>
                   </div>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6 text-gray-600">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6 text-gray-600">
                   <div className="flex items-center">
-                    <Calendar className="h-5 w-5 mr-2 text-gray-400" />
-                    <span className="font-medium">{experience.period}</span>
+                    <Calendar className="h-4 w-4 sm:h-5 sm:w-5 mr-2 text-gray-400" />
+                    <span className="text-sm sm:text-base font-medium">{experience.period}</span>
                   </div>
                   <div className="flex items-center">
-                    <MapPin className="h-5 w-5 mr-2 text-gray-400" />
-                    <span className="font-medium">{experience.location}</span>
+                    <MapPin className="h-4 w-4 sm:h-5 sm:w-5 mr-2 text-gray-400" />
+                    <span className="text-sm sm:text-base font-medium">{experience.location}</span>
                   </div>
                 </div>
                 
                 <div className="space-y-4">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                  <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-3">
                     Key Responsibilities & Achievements:
                   </h4>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 sm:space-y-3">
                     {experience.responsibilities.map((responsibility, index) => (
                       <li key={index} className="flex items-start">
-                        <div className="flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full mt-2 mr-4"></div>
-                        <span className="text-gray-700 leading-relaxed">{responsibility}</span>
+                        <div className="flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 sm:mr-4"></div>
+                        <span className="text-sm sm:text-base text-gray-700 leading-relaxed">{responsibility}</span>
                       </li>
                     ))}
                   </ul>
