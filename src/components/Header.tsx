@@ -5,7 +5,6 @@ import { Menu, X } from 'lucide-react';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ['Home', 'About', 'Skills', 'Education', 'Projects', 'Contact'];
   const menuItems = ['Home', 'About', 'Skills', 'Education', 'Experience', 'Projects', 'Contact'];
 
   return (
