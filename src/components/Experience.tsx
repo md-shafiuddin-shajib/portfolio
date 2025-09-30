@@ -8,7 +8,7 @@ const Experience: React.FC = () => {
     position: 'Web Developer & Business Analyst',
     type: 'Intern',
     period: 'March 2024 – April 2024',
-    location: 'Remote',
+    location: 'Dhaka',
     responsibilities: [
       'Built responsive business websites using Elementor Pro, HTML, CSS, and JavaScript.',
       'Worked directly with international clients to gather project requirements and provide technical solutions.',
