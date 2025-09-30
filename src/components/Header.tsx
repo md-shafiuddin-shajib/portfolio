@@ -5,7 +5,7 @@ import { Menu, X } from 'lucide-react';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ['Home', 'About', 'Skills', 'Education', 'Experience', 'Projects', 'Contact'];
+  const menuItems = ['Home', 'About', 'Skills', 'Education', 'Experience', 'Projects', 'WordPress', 'Contact'];
 
   return (
     <header className="fixed w-full bg-gradient-to-r from-primary-900/90 to-primary-800/90 backdrop-blur-sm z-50">
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
             {menuItems.map((item) => (
               <Link
                 key={item}
-                to={item.toLowerCase()}
+                to={item === 'WordPress' ? 'wordpress-projects' : item.toLowerCase()}
                 smooth={true}
                 className="text-white/80 hover:text-white cursor-pointer transition-colors text-sm font-medium"
               >
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             {menuItems.map((item) => (
               <Link
                 key={item}
-                to={item.toLowerCase()}
+                to={item === 'WordPress' ? 'wordpress-projects' : item.toLowerCase()}
                 smooth={true}
                 className="block py-2 text-white/80 hover:text-white cursor-pointer transition-colors text-sm font-medium"
                 onClick={() => setIsMenuOpen(false)}
