@@ -125,70 +125,178 @@ const WordPressProjects: React.FC = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <div className="bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+          <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 rounded-3xl p-12 md:p-16 relative overflow-hidden border border-white/10 shadow-2xl">
             <div className="absolute inset-0 opacity-10">
               <div className="absolute inset-0" style={{
                 backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
               }}></div>
             </div>
             
-            <div className="relative z-10">
-              <div className="flex items-center justify-center mb-6">
-                <div className="bg-white/10 p-4 rounded-full backdrop-blur-sm">
+            {/* Floating elements for visual appeal */}
+            <div className="absolute top-8 right-8 w-20 h-20 bg-blue-500/10 rounded-full blur-xl"></div>
+            <div className="absolute bottom-8 left-8 w-16 h-16 bg-purple-500/10 rounded-full blur-lg"></div>
+            
+            <div className="relative z-10 text-center">
+              <div className="flex items-center justify-center mb-8">
+                <div className="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20 shadow-lg">
                   <Code2 className="h-8 w-8 text-white" />
                 </div>
               </div>
               
-              <h3 className="text-3xl font-bold text-white mb-4">
-                Custom Code Portfolio
+              <h3 className="text-4xl font-bold text-white mb-6 leading-tight">
+                Full-Stack Development
+                <span className="block text-2xl font-normal text-blue-200 mt-2">Custom Code Portfolio</span>
               </h3>
               
-              <p className="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
-                Explore my comprehensive collection of custom-coded projects, featuring React.js applications, 
-                full-stack solutions, and innovative web technologies
+              <p className="text-lg text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Dive into my comprehensive collection of custom-built applications showcasing advanced 
+                React.js development, full-stack architecture, and cutting-edge web technologies. 
+                Each project demonstrates scalable solutions and modern development practices.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <div className="flex items-center text-blue-200 mb-4 sm:mb-0">
-                  <Palette className="h-5 w-5 mr-2" />
-                  <span className="text-sm font-medium">React.js • Node.js • MongoDB • Full Stack</span>
+              {/* Technology Stack Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 max-w-2xl mx-auto">
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                  <div className="text-blue-300 font-semibold text-sm">Frontend</div>
+                  <div className="text-white text-xs mt-1">React.js • Redux</div>
+                </div>
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                  <div className="text-green-300 font-semibold text-sm">Backend</div>
+                  <div className="text-white text-xs mt-1">Node.js • Express</div>
+                </div>
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                  <div className="text-purple-300 font-semibold text-sm">Database</div>
+                  <div className="text-white text-xs mt-1">MongoDB • MySQL</div>
+                </div>
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                  <div className="text-orange-300 font-semibold text-sm">Styling</div>
+                  <div className="text-white text-xs mt-1">Tailwind • CSS3</div>
                 </div>
               </div>
               
-              <a
-                href="https://mdshafiuddinshajib.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-              >
-                <Code2 className="h-5 w-5 mr-2" />
-                View Custom Code Portfolio
-                <ExternalLink className="h-4 w-4 ml-2" />
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a
+                  href="https://mdshafiuddinshajib.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center px-8 py-4 bg-white text-gray-900 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-2 border-transparent hover:border-white/20"
+                >
+                  <Code2 className="h-5 w-5 mr-3 group-hover:rotate-12 transition-transform duration-300" />
+                  Explore Full Portfolio
+                  <ExternalLink className="h-4 w-4 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
+                </a>
+                
+                <div className="flex items-center space-x-4 text-blue-200">
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+                    <span className="text-sm font-medium">Live Projects</span>
+                  </div>
+                  <div className="w-px h-4 bg-white/20"></div>
+                  <div className="flex items-center">
+                    <Globe className="h-4 w-4 mr-2" />
+                    <span className="text-sm font-medium">Production Ready</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Technologies Used */}
+        {/* Professional Development Stack */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mt-16 text-center"
+          className="mt-20"
         >
-          <h4 className="text-lg font-semibold text-gray-900 mb-6">
-            Technologies & Tools Used
-          </h4>
-          <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
-            {['WordPress', 'Elementor Pro', 'Custom CSS', 'JavaScript', 'Responsive Design', 'SEO Optimization', 'Performance Optimization', 'Cross-browser Compatibility'].map((tech, index) => (
-              <span
-                key={index}
-                className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-blue-300 hover:text-blue-600 transition-colors"
-              >
-                {tech}
-              </span>
-            ))}
+          <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-3xl p-12 border border-gray-200">
+            <div className="text-center mb-12">
+              <h4 className="text-3xl font-bold text-gray-900 mb-4">
+                Professional Development Stack
+              </h4>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Cutting-edge technologies and industry-standard tools powering exceptional client solutions
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+              {/* Core Technologies */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <div className="bg-blue-100 p-3 rounded-xl mr-3">
+                    <Wordpress className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h5 className="font-bold text-gray-900">Core Platform</h5>
+                </div>
+                <div className="space-y-2">
+                  <span className="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">WordPress</span>
+                  <span className="inline-block px-3 py-1 bg-purple-50 text-purple-700 rounded-lg text-sm font-medium ml-2">Elementor Pro</span>
+                </div>
+              </div>
+              
+              {/* Frontend Technologies */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <div className="bg-green-100 p-3 rounded-xl mr-3">
+                    <Code2 className="h-6 w-6 text-green-600" />
+                  </div>
+                  <h5 className="font-bold text-gray-900">Frontend</h5>
+                </div>
+                <div className="space-y-2">
+                  <span className="inline-block px-3 py-1 bg-green-50 text-green-700 rounded-lg text-sm font-medium">Custom CSS</span>
+                  <span className="inline-block px-3 py-1 bg-yellow-50 text-yellow-700 rounded-lg text-sm font-medium ml-2">JavaScript</span>
+                </div>
+              </div>
+              
+              {/* Design & UX */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <div className="bg-pink-100 p-3 rounded-xl mr-3">
+                    <Palette className="h-6 w-6 text-pink-600" />
+                  </div>
+                  <h5 className="font-bold text-gray-900">Design & UX</h5>
+                </div>
+                <div className="space-y-2">
+                  <span className="inline-block px-3 py-1 bg-pink-50 text-pink-700 rounded-lg text-sm font-medium">Responsive Design</span>
+                  <span className="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 rounded-lg text-sm font-medium ml-2">UI/UX</span>
+                </div>
+              </div>
+              
+              {/* Optimization */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <div className="bg-orange-100 p-3 rounded-xl mr-3">
+                    <Globe className="h-6 w-6 text-orange-600" />
+                  </div>
+                  <h5 className="font-bold text-gray-900">Optimization</h5>
+                </div>
+                <div className="space-y-2">
+                  <span className="inline-block px-3 py-1 bg-orange-50 text-orange-700 rounded-lg text-sm font-medium">SEO</span>
+                  <span className="inline-block px-3 py-1 bg-red-50 text-red-700 rounded-lg text-sm font-medium ml-2">Performance</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Professional Standards */}
+            <div className="mt-12 text-center">
+              <div className="inline-flex items-center space-x-8 bg-white rounded-2xl px-8 py-4 shadow-lg border border-gray-200">
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                  <span className="text-sm font-semibold text-gray-700">Cross-browser Compatible</span>
+                </div>
+                <div className="w-px h-6 bg-gray-300"></div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full mr-2 animate-pulse"></div>
+                  <span className="text-sm font-semibold text-gray-700">Mobile-First Approach</span>
+                </div>
+                <div className="w-px h-6 bg-gray-300"></div>
+                <div className="flex items-center">
+                  <div className="w-3 h-3 bg-purple-500 rounded-full mr-2 animate-pulse"></div>
+                  <span className="text-sm font-semibold text-gray-700">Performance Optimized</span>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
