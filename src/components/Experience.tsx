@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
     company: 'Sardar IT',
     position: 'Web Developer & Business Analyst',
     type: 'Intern',
-    period: 'March 2024 – April 2024',
+    period: 'March 2025 – May 2025',
     location: 'Dhaka',
     responsibilities: [
       'Built responsive business websites using Elementor Pro, HTML, CSS, and JavaScript.',
