@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Wordpress, Palette, Code2, Globe } from 'lucide-react';
+import { ExternalLink, WholeWord as Wordpress, Palette, Code2, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const WordPressProjects: React.FC = () => {
